@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: bisque;
+
+}
+
+body {
+    background: url("background.jpg")no-repeat;
+    background-size: cover;
+    color: bisque;
+}
+
+.container {
+    width: 400px;
+    margin: 150px auto;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5), 0px 10px 20px rgba(255, 255, 255, 1);
+    height: 30vh;
+    border-radius: 12px;
+    padding: 20px;
+    border: solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.clock {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentDate {
+    margin: 30px auto;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock h1 {
+    font-size: 70px;
+    font-weight: bold;
+
+}
+
+.clock span {
+    position: relative;
+    top: -25%;
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.title {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.footer {
+    height: 80px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* To make it responsive we have added following code */
+@media screen and (max-width:274px) {
+    .container {
+        max-width: 260px;
+        padding: 10px;
+        height: 20vh;
+
+    }
+    .footer {
+        height: 50px;
+        padding: 15px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .title {
+        margin: 10px auto;
+        text-align: center;
+        font-size: 35px;
+        text-decoration: underline;
+    }
+    .currentDate h2 {
+        font-size: 25px;
+    }
+
+    .clock h1 {
+        font-size: 30px
+    }
+}
+
+@media screen and (min-width:275px)and (max-width:400px) {
+    .container {
+        max-width: 260px;
+        height: 25vh;
+        padding: 10px;
+
+    }
+    .title {
+        margin: 15px auto;
+        text-align: center;
+        font-size: 45px;
+        text-decoration: underline;
+    }
+    .footer {
+        height: 60px;
+        padding: 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .currentDate h2 {
+        font-size: 30px;
+    }
+
+    .clock h1 {
+        font-size: 38px;
+    }
+}
